@@ -1,0 +1,1 @@
+AWS_ACCESS_KEY_ID=XXX AWS_SECRET_ACCESS_KEY=XXX AWS_REGION=XXX bundle exec shoryuken -R -C config/shoryuken.yml -d --logfile log/shoryuken.log

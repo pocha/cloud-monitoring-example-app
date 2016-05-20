@@ -1,0 +1,15 @@
+<h1>New Agent Creation Process</h1>
+
+<%= render 'form' %>
+
+<pre>
+  Follow the steps below to deploy a new agent :-
+
+  1. ssh into the EC2 machine
+  2. Git clone the agent code
+  3. cd _agent_. bundle install
+  4. AWS_ACCESS_KEY_ID=XXX AWS_SECRET_ACCESS_KEY=XXXX AWS_REGION=XXX QUEUE_NAME=agent_data INTERVAL=60 rake daemon:start 
+  5. Check log/daemon.log to ensure data is getting sent into AWS queue
+
+</pre>
+<%= link_to 'Back', agents_path %>

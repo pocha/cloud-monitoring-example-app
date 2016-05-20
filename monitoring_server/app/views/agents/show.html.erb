@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ip:</strong>
+  <%= @agent.ip %>
+</p>
+
+<p>
+  <strong>Cpu:</strong>
+  <%= @agent.cpu %>
+</p>
+
+<p>
+  <strong>Disk:</strong>
+  <%= @agent.disk %>
+</p>
+
+<p>
+  <strong>Memory:</strong>
+  <%= @agent.memory %>
+</p>
+
+<%= link_to 'Edit', edit_agent_path(@agent) %> |
+<%= link_to 'Back', agents_path %>
